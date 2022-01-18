@@ -21,7 +21,14 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 
 // CREA TU FUNCION MAYUSCULAS aqui:
 
+function  mayusculas(nombres){
+    
 
+    for(let i=0;i<nombres.length;i++){
+        console.log(nombres[i].toUpperCase());
+    }
+
+}
 
 
 /*
@@ -37,8 +44,12 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 // CREA TU FUNCION calculateDogAge aqui:
 
 
+function calculateDogAge(hAge){
 
+    let pAge= hAge*7;
+    console.log("Tu perro tiene "+pAge+ " años perro")
 
+}
 
 
 
@@ -61,6 +72,15 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+function Perro(Nombre,Color,Raza){
+    this.Nombre=Nombre;
+    this.Color=Color;
+    this.Raza=Raza;
+}
+
+var perro1= new Perro('Heidy','negro,cafe,blanco','Beagle');
+var perro2= new Perro('Heidy','blanco','Chihuahua');
+var perro3= new Perro('Fiona','negro','Pug');
 
 
 /***
@@ -73,7 +93,9 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 mayusculas(nombres);
 calculateDogAge(4);
 
-
+console.log(perro1.Nombre);
+console.log(perro2.Color);
+console.log(perro3.Raza);
 
 
 /***
@@ -81,6 +103,9 @@ calculateDogAge(4);
  *        PRUEBA TUS OBJETOS AQUI
  * 
  ***/
+
+
+
 
 
 </script>
